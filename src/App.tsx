@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './Octocat.png';
 import './App.css';
+import Input from "./components/input";
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
         Search for Github users:
       </header>
         <section>
-            input box goes here
+            <Input/>
         </section>
     </div>
   );
