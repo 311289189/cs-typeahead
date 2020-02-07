@@ -5,19 +5,65 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <input
-        aria-label="cost-input"
-        class="generic-input"
-        type="text"
-      />
+      <main>
+        <div>
+          <label
+            for="apiKey"
+          >
+            If you would like to use your own API key, please enter it here 
+          </label>
+          <input
+            class="generic-input"
+            id="apiKey"
+            type="text"
+            value=""
+          />
+        </div>
+        <div>
+          <label
+            for="searchInput"
+          >
+            Search for a user: 
+          </label>
+          <input
+            class="generic-input"
+            id="searchInput"
+            type="text"
+            value=""
+          />
+        </div>
+      </main>
     </div>
   </body>,
   "container": <div>
-    <input
-      aria-label="cost-input"
-      class="generic-input"
-      type="text"
-    />
+    <main>
+      <div>
+        <label
+          for="apiKey"
+        >
+          If you would like to use your own API key, please enter it here 
+        </label>
+        <input
+          class="generic-input"
+          id="apiKey"
+          type="text"
+          value=""
+        />
+      </div>
+      <div>
+        <label
+          for="searchInput"
+        >
+          Search for a user: 
+        </label>
+        <input
+          class="generic-input"
+          id="searchInput"
+          type="text"
+          value=""
+        />
+      </div>
+    </main>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

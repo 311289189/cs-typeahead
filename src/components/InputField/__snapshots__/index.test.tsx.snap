@@ -2,8 +2,8 @@
 
 exports[`matches snapshot 1`] = `
 <input
-  aria-label="cost-input"
   class="generic-input"
   type="text"
+  value=""
 />
 `;

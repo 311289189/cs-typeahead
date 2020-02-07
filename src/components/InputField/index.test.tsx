@@ -17,15 +17,17 @@ test('renders <Input/> component', () => {
 });
 
 test('<Input/> state can be updated', async () => {
-    const inputWrapper = render(<InputField />);
-    const input = inputWrapper.getByLabelText('cost-input') as HTMLInputElement;
+    const label = 'test-label';
+    const inputWrapper = render(<InputField aria-label={label} />);
+    const input = inputWrapper.getByLabelText(label) as HTMLInputElement;
     fireEvent.change(input, { target: { value: inputTextFixture } });
     expect(input.value).toBe(inputTextFixture);
 });
 
 test('when <Input/> internal state is updated callback prop is fired', async () => {
     const spy = jest.fn();
-    const input = render(<InputField onChange={spy}/>).getByLabelText('cost-input');
+    const label = 'test-label';
+    const input = render(<InputField onChange={spy} aria-label={label}/>).getByLabelText(label);
     fireEvent.change(input, { target: { value: inputTextFixture } });
     expect(spy).toHaveBeenCalledTimes(1);
     expect(spy).toHaveBeenCalledWith(inputTextFixture);
