@@ -5,7 +5,7 @@ interface Props {
     onChange?(value: string): void
 }
 
-const Input = (props: Props) => (
+const InputField = (props: Props) => (
     <input
         onChange={e => props.onChange && props.onChange(e.target.value)}
         aria-label="cost-input"
@@ -14,4 +14,4 @@ const Input = (props: Props) => (
     />
 )
 
-export default Input
+export default InputField

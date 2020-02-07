@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './Octocat.png';
 import './App.css';
-import Input from "./components/input";
+import InputField from "./components/InputField";
 import throttle from "./utils/debounce";
 
 const App = () => {
@@ -17,7 +17,7 @@ const App = () => {
         Search for Github users:
       </header>
         <section>
-            <Input onChange={handleInputChange}/>
+            <InputField onChange={handleInputChange}/>
         </section>
     </div>
   );
