@@ -4,6 +4,12 @@ import Input from './';
 
 const inputTextFixture = 'hello'
 
+test('matches snapshot', () => {
+    const { container } = render(<Input />);
+    const inputElement = container.querySelector('input')
+    expect(inputElement).toMatchSnapshot();
+});
+
 test('renders <Input/> component', () => {
     const { container } = render(<Input />);
     const inputElement = container.querySelector('input')
