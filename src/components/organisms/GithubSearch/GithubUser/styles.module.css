@@ -9,7 +9,7 @@
 }
 
 .userTile:hover {
-    background: #e1eaf6;
+    background: var(--color-paleLavender);
 }
 
 .avatar {

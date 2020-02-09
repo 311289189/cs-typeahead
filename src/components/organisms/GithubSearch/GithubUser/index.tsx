@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames'
 
-import { User } from "../../../../types/github";
+import { User } from "../../../../../types/github";
 const styles = require('./styles.module.css')
 
 interface Props {

@@ -2,7 +2,7 @@
 
 exports[`matches snapshot 1`] = `
 <input
-  class="generic-input"
+  class="genericInput"
   type="text"
   value=""
 />

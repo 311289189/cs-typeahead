@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import InputField from './';
+import InputField from './index';
 
 const inputTextFixture = 'hello'
 

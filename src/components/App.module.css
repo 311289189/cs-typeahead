@@ -1,0 +1,30 @@
+@import '../style/colors.module.css';
+
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+.GithubSearch {
+  height: 100%;
+  padding-top: 5%;
+  background: var(--color-LightPastelPurple);
+}
+
+.AppLogo {
+  display: block;
+  max-width:75px;
+  max-height:75px;
+  margin: auto;
+  width: auto;
+  height: auto;
+  pointer-events: none;
+  padding: 10px 0;
+}
+
+.AppHeader {
+  padding: 10px 0;
+  background-color: var(--color-paleLavender);
+  color: var(--color-MsuGreen);
+  font-size: 20px;
+}

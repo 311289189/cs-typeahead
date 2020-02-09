@@ -1,12 +1,13 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import InputField from "../../components/InputField";
-import useDebounce from "../../hooks/useDebounce";
-import apiFetch from "../../utils/apiFetch";
-import {GithubUsersResponse, User} from "../../../types/github";
+import InputField from "../../baseComponents/InputField";
+import useDebounce from "../../../hooks/useDebounce";
+import apiFetch from "../../../utils/apiFetch";
+import {GithubUsersResponse, User} from "../../../../types/github";
 import GithubUser from "./GithubUser";
-import {HTTP_URL} from "../../config/http";
+import {HTTP_URL} from "../../../config/http";
+
 const styles = require('./styles.module.css');
 
 const GithubSearch = () => {

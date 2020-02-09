@@ -1,3 +1,7 @@
+:root {
+    --small-screen-offset: 20px;
+}
+
 .userTilesWrapper {
     position: absolute;
     background: white;
@@ -27,11 +31,23 @@
     margin: auto;
 }
 
+@media (max-width: 600px) {
+    .searchInput {
+        width: auto;
+        padding: 0 var(--small-screen-offset);
+    }
+    .userTilesWrapper.isOpen {
+        width: calc(100% - var(--small-screen-offset) * 2);
+        left: var(--small-screen-offset);
+    }
+}
+
 .inputField {
     font-size: 15px;
-    border: 5px solid #DDC4DD;
+    border: 5px solid var(--color-languidLavender);
     border-radius: 5px 5px 0 0;
     outline: none;
+    color: var(--color-MsuGreen)
 }
 
 .hideScrollbar {

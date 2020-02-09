@@ -1,5 +1,4 @@
 import React, { InputHTMLAttributes } from 'react';
-import './index.css'
 
 interface Props {
     onChange?(value: string): void
@@ -20,7 +19,6 @@ const InputField = (props: Props & Omit<InputHTMLAttributes<never>, 'onChange'>)
         onChange={e => onChange && onChange(e.target.value)}
         onFocus={() => hasFocus && hasFocus(true)}
         onBlur={() => hasFocus && hasFocus(false)}
-        className="generic-input"
         type="text"
         value={props.value}
         { ...rest }
