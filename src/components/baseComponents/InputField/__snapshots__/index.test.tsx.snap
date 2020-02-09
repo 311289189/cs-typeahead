@@ -2,7 +2,6 @@
 
 exports[`matches snapshot 1`] = `
 <input
-  class="genericInput"
   type="text"
   value=""
 />
