@@ -9,7 +9,7 @@ interface Props {
   isLoading: boolean
 }
 
-export default ({ user, isLoading }: Props) => (
+const GithubUser = ({ user, isLoading }: Props) => (
   <a
     href={user.html_url}
     target="_blank"
@@ -24,3 +24,5 @@ export default ({ user, isLoading }: Props) => (
     <div className={styles.userLogin}>{user.login}</div>
   </a>
 )
+
+export default GithubUser

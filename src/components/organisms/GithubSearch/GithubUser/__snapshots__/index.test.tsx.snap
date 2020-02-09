@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GithubUser matches snapshot 1`] = `
+<a
+  className="userTile"
+  href="string"
+  rel="noopener noreferrer"
+  target="_blank"
+>
+  <img
+    alt="string"
+    className="avatar"
+    src="string"
+  />
+  <div
+    className="userLogin"
+  >
+    string
+  </div>
+</a>
+`;
