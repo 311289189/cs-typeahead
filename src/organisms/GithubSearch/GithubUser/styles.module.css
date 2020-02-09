@@ -1,0 +1,22 @@
+.loading {
+    opacity: 0.5;
+}
+
+.userTile {
+    display: flex;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.userTile:hover {
+    background: #e1eaf6;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+}
+
+.userLogin {
+    margin-left: 10px;
+}

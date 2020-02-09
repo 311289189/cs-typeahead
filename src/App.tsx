@@ -8,11 +8,11 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        Search for Github users:
+        <div>Search for Github users.</div>
       </header>
-        <section>
-          <GithubSearch/>
-        </section>
+      <section className="Github-search">
+        <GithubSearch/>
+      </section>
     </div>
   );
 }
