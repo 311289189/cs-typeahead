@@ -1,7 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import InputField from "../../baseComponents/InputField";
 import useDebounce from "../../../hooks/useDebounce";
 import apiFetch from "../../../utils/apiFetch";
 import {GithubUsersResponse, User} from "../../../../types/github";
@@ -42,12 +41,14 @@ const GithubSearch = () => {
   return (
     <main>
       <div className={styles.searchInput}>
-        <InputField
+        <input
           className={styles.inputField}
-          hasFocus={setSearchFocus}
+          onFocus={() => setSearchFocus(true)}
+          onBlur={() => setTimeout(() => setSearchFocus(false), 100)}
           placeholder="Search for a user: "
           id="searchInput"
-          onChange={setSearchTerm}
+          type="text"
+          onChange={(e) => setSearchTerm(e.target.value)}
           value={searchTerm}
         />
         <div className={styles.errorMessage}>{ error && error }</div>

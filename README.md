@@ -25,10 +25,12 @@ Your app is ready to be deployed!
 
 ## General Information
 
-#### Directory Structure:
+#### Directory Structure (`/src`):
 `components/*` Contains all react components  
-`components/baseComponents` Re-useable base components (no styling)  
-`components/organisms` Application components   
+`utils/*` Contains utility functions  
+`style/*` Shared styles  
+`hooks/*` Custom hooks  
+`config/*` Config files  
 
 #### Styling:
 Uses [CSS Modules](https://github.com/css-modules/css-modules).
@@ -40,3 +42,9 @@ Uses [CSS Modules](https://github.com/css-modules/css-modules).
 #### Additional dependencies:
 [`@testing-library/react-hooks`](https://github.com/testing-library/react-hooks-testing-library) For testing custom hooks  
 [`node-fetch`](https://github.com/node-fetch/node-fetch) Only used for mocking response headers
+
+#### State Management:
+There is not enough state to justify using any library, or event React API's like context. The state of the user search is managed with a simple react hook.
+
+#### Usage:
+Without an API key Github will provide the browser with about 10 API calls before it starts rate limiting (Check `X-RateLimit-Remaining` response header from the Github API). When this limit is reached then wait a few seconds for the limit to be lifted. Adding the header `Authorization: Bearer <token>` is the more permanent solution. 
